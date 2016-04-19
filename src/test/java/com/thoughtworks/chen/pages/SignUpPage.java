@@ -1,9 +1,16 @@
 package com.thoughtworks.chen.pages;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by chenli on 4/14/16.
@@ -59,4 +66,6 @@ public class SignUpPage {
     public void she_sign_up() throws Throwable {
         signupButton.click();
     }
+
+
 }

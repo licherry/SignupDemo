@@ -8,15 +8,15 @@ Feature:
     Given the user is on landing page
     When she chooses to sign up
 
-  @Signup-Simple
-  Scenario: Sign up a new user
-    And she provides the first name as "ccc"
-    And she provides the last name as "l"
-    And she provides the email as "aaaa@345.com"
-    And she provides the password as "11111111"
-    And she provides the confirm password again as "11111111"
-    And she signs-up
-    Then she should be logged in to the application
+#  @Signup-Simple
+#  Scenario: Sign up a new user
+#    And she provides the first name as "ccc"
+#    And she provides the last name as "l"
+#    And she provides the email as "aaaa@3450.com"
+#    And she provides the password as "11111111"
+#    And she provides the confirm password again as "11111111"
+#    And she signs-up
+#    Then she should be logged in to the application
 
   @Signup-DataDriven
   Scenario Outline: Data driving new user sign-up
@@ -31,11 +31,11 @@ Feature:
       | firstName | lastName | email        | password |
       | Suki      | Li       | bbbc@test.com | 12345678 |
       | Kitty     | Hello    | dddc@test.com | 12345678 |
-
-  @Signup-Datatable
-  Scenario: Sign-up a new user with datatable example
-    And she provides her details as follows:
-      | firstName | lastName | email      | password |
-      | Sukesh    | Kumar    | eeec@aq.com | password |
-    And she signs-up
-    Then she should be logged in to the application
+#
+#  @Signup-Datatable
+#  Scenario: Sign-up a new user with datatable example
+#    And she provides her details as follows:
+#      | firstName | lastName | email      | password |
+#      | Sukesh    | Kumar    | eeec@aq.com | password |
+#    And she signs-up
+#    Then she should be logged in to the application

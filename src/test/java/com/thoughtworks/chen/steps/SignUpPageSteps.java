@@ -4,7 +4,11 @@ import com.thoughtworks.chen.domain.UserDetails;
 import com.thoughtworks.chen.util.DriverFactory;
 import cucumber.api.java.en.And;
 import com.thoughtworks.chen.pages.SignUpPage;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -51,4 +55,5 @@ public class SignUpPageSteps extends DriverFactory {
         new SignUpPage(driver).she_provides_the_password_as(userToBeSignedUp.password);
         new SignUpPage(driver).she_provides_the_confirm_password_again_as(userToBeSignedUp.password);
     }
+
 }

@@ -1,6 +1,7 @@
 package com.thoughtworks.chen.steps;
 
 import com.thoughtworks.chen.pages.HomePage;
+import com.thoughtworks.chen.pages.SignUpPage;
 import com.thoughtworks.chen.util.DriverFactory;
 import cucumber.api.java.en.Then;
 
