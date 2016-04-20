@@ -7,7 +7,7 @@ Feature: Sign in
     Given the user is on landing page
 
   Scenario: Sign in successfully
-    When she inputs email as "bbbc@test.com"
+    When she inputs email as "bbba@test.com"
     And she inputs password as "12345678"
     And she signs-in
     Then she should be logged in to the application
