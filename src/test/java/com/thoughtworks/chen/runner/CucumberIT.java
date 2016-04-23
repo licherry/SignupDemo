@@ -14,5 +14,5 @@ import org.junit.runner.RunWith;
         features = "classpath:features/",
         tags = {"@Signin,@Signup-Datatable"}
 )
-public class RunFeatures {
+public class CucumberIT {
 }
