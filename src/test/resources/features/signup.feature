@@ -12,7 +12,7 @@ Feature: Sign up
   Scenario: Sign up a new user
     And she provides the first name as "ccc"
     And she provides the last name as "l"
-    And she provides the email as "aaaa3@3459.com"
+    And she provides the email as "aaaa4@3459.com"
     And she provides the password as "11111111"
     And she provides the confirm password again as "11111111"
     And she signs-up
@@ -29,13 +29,13 @@ Feature: Sign up
     Then she should be logged in to the application
     Examples:
       | firstName | lastName | email        | password |
-      | Suki      | Li       | bbbc3@test.com | 12345678 |
-      | Kitty     | Hello    | dddc3@test.com | 12345678 |
+      | Suki      | Li       | bbbc4@test.com | 12345678 |
+      | Kitty     | Hello    | dddc4@test.com | 12345678 |
 
   @Signup-Datatable
   Scenario: Sign-up a new user with datatable example
     And she provides her details as follows:
       | firstName | lastName | email      | password |
-      | Sukesa    | Kuma    | eeeu3@aq.com | 11111111 |
+      | Sukesa    | Kuma    | eeeu4@aq.com | 11111111 |
     And she signs-up
     Then she should be logged in to the application
