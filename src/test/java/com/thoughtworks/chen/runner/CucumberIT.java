@@ -11,8 +11,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         format = {"pretty", "html:target/cucumber-reports","json:target/cucumber-report.json"},
         glue = "com/thoughtworks/chen/steps",
-        features = "classpath:features/",
-        tags = {"@Signin,@Signup-Datatable"}
+        features = "classpath:features/"
 )
 public class CucumberIT {
 }
