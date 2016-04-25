@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * Created by chenli on 4/22/16.
  */
-public class LoginPage {
+public class SignInPage {
     WebDriver driver;
 
     @FindBy(id = "user_email")
@@ -20,7 +20,7 @@ public class LoginPage {
     @FindBy(name = "commit")
     private WebElement signinButton;
 
-    public LoginPage(WebDriver driver){
+    public SignInPage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
     }
