@@ -22,7 +22,7 @@ public class DriverFactory {
     private void createNewDriverInstance() {
         String browser = new PropertyReader().readProperty("browser");
         if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "tools/webdriver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "tools/webdriver/chromedriver_2.31");
             driver = new ChromeDriver();
         } else if (browser.equals("firfox")) {
             driver = new FirefoxDriver();
